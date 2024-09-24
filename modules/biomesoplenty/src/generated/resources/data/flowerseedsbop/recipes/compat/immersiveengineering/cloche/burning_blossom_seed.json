@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "flowerseedsbop:burning_blossom_seed"
+  },
+  "render": {
+    "type": "crop",
+    "block": "flowerseedsbop:burning_blossom_seed"
+  },
+  "results": [
+    {
+      "item": "biomesoplenty:burning_blossom"
+    },
+    {
+      "item": "flowerseedsbop:burning_blossom_seed"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:netherrack"
+  },
+  "time": 240
+}

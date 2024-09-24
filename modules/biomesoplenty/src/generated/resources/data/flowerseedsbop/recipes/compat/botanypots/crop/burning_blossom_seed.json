@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "netherrack",
+    "nether"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseedsbop:burning_blossom_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "biomesoplenty:burning_blossom"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseedsbop:burning_blossom_seed"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "flowerseedsbop:burning_blossom_seed"
+  }
+}

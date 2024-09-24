@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseedsbop:glow_flower_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "biomesoplenty:glowflower"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseedsbop:glow_flower_seed"
+      }
+    }
+  ],
+  "growthTicks": 1400,
+  "seed": {
+    "item": "flowerseedsbop:glow_flower_seed"
+  }
+}

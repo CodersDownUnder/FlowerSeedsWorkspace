@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage0"
+    },
+    "age=1": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage0"
+    },
+    "age=2": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage1"
+    },
+    "age=3": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage1"
+    },
+    "age=4": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage1"
+    },
+    "age=5": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage2"
+    },
+    "age=6": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage3"
+    },
+    "age=7": {
+      "model": "flowerseedsbop:block/orange_cosmos_seed_stage3"
+    }
+  }
+}

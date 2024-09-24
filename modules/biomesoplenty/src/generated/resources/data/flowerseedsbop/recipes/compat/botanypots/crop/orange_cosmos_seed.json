@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseedsbop:orange_cosmos_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "biomesoplenty:orange_cosmos"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseedsbop:orange_cosmos_seed"
+      }
+    }
+  ],
+  "growthTicks": 1400,
+  "seed": {
+    "item": "flowerseedsbop:orange_cosmos_seed"
+  }
+}

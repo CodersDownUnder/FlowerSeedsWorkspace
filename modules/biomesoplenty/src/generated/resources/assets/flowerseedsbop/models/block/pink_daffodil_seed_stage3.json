@@ -1,0 +1,58 @@
+{
+  "children": {
+    "flower0": {
+      "parent": "biomesoplenty:block/pink_daffodil",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower1": {
+      "parent": "biomesoplenty:block/pink_daffodil",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower2": {
+      "parent": "biomesoplenty:block/pink_daffodil",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    },
+    "flower3": {
+      "parent": "biomesoplenty:block/pink_daffodil",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    }
+  },
+  "item_render_order": [
+    "flower0",
+    "flower1",
+    "flower2",
+    "flower3"
+  ],
+  "loader": "neoforge:composite",
+  "textures": {
+    "particle": "biomesoplenty:block/pink_daffodil"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "flowerseedsbop:pink_daffodil_seed"
+  },
+  "output": [
+    {
+      "chance": 4.0,
+      "count": 2,
+      "item": "biomesoplenty:pink_daffodil"
+    },
+    {
+      "chance": 2.0,
+      "item": "flowerseedsbop:pink_daffodil_seed"
+    }
+  ]
+}

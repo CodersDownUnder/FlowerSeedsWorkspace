@@ -1,0 +1,22 @@
+{
+  "values": {
+    "flowerseedsbop:burning_blossom_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsbop:glow_flower_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsbop:orange_cosmos_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsbop:pink_daffodil_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsbop:rose_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsbop:wilted_lily_seed": {
+      "chance": 0.3
+    }
+  }
+}

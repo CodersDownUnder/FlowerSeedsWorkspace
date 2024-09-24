@@ -1,0 +1,10 @@
+{
+  "values": {
+    "flowerseedsaether:purple_flower_seed": {
+      "chance": 0.3
+    },
+    "flowerseedsaether:white_flower_seed": {
+      "chance": 0.3
+    }
+  }
+}

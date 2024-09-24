@@ -1,0 +1,147 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2024-09-03 14:50:06
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.neoforged.neoforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:55) ~[neoforge-20.4.237.jar:?] {re:classloading}
+	at net.neoforged.neoforge.client.loading.ClientModLoader.completeModLoading(ClientModLoader.java:125) ~[neoforge-20.4.237.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.buildInitialScreens(Minecraft.java:679) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.onGameLoadFinished(Minecraft.java:652) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.onResourceLoadFinished(Minecraft.java:647) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.lambda$new$6(Minecraft.java:635) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.Util.ifElse(Util.java:425) ~[neoforge-20.4.237.jar:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$new$7(Minecraft.java:629) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.neoforged.neoforge.client.loading.NeoForgeLoadingOverlay.render(NeoForgeLoadingOverlay.java:146) ~[neoforge-20.4.237.jar:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1128) ~[neoforge-20.4.237.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1263) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:818) ~[neoforge-20.4.237.jar:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:glitchcore.mixins.json:client.MixinMinecraft from mod (unknown),pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:244) ~[neoforge-20.4.237.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.ForgeClientUserdevLaunchHandler.runService(ForgeClientUserdevLaunchHandler.java:19) ~[loader-2.0.17.jar:2.0] {}
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-2.0.17.jar:2.0] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+-- MOD flowerseedsbop --
+Details:
+	Caused by 0: java.lang.NoClassDefFoundError: net/codersdownunder/flowerseeds/blocks/CustomBurningCropBlock
+		at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {re:mixin}
+		at java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[?:?] {re:mixin}
+		at java.lang.Class.getConstructors(Class.java:2060) ~[?:?] {re:mixin}
+		at net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:78) ~[loader-2.0.17.jar%23160!/:2.0] {}
+		at net.neoforged.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:129) ~[loader-2.0.17.jar%23160!/:2.0] {re:mixin}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+	Mod File: /home/trhod17/Desktop/modding/1.20/flowerseeds2-1-20-x/modules/biomesoplenty/build/resources/main/
+	Failure message: Flower Seeds 2 Biomes O Plenty Addon (flowerseedsbop) has failed to load correctly
+		java.lang.NoClassDefFoundError: net/codersdownunder/flowerseeds/blocks/CustomBurningCropBlock
+	Mod Version: 2.0.0
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.ClassNotFoundException: net.codersdownunder.flowerseeds.blocks.CustomBurningCropBlock
+Stacktrace:
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:193) ~[securejarhandler-2.1.24.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:193) ~[securejarhandler-2.1.24.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {re:mixin}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[?:?] {re:mixin}
+	at java.lang.Class.getConstructors(Class.java:2060) ~[?:?] {re:mixin}
+	at net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:78) ~[loader-2.0.17.jar%23160!/:2.0] {}
+	at net.neoforged.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:129) ~[loader-2.0.17.jar%23160!/:2.0] {re:mixin}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.4
+	Minecraft Version ID: 1.20.4
+	Operating System: Linux (amd64) version 6.10.7-zen1-1-zen
+	Java Version: 17.0.12, Arch Linux
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Arch Linux
+	Memory: 469586552 bytes (447 MiB) / 1543503872 bytes (1472 MiB) up to 8187281408 bytes (7808 MiB)
+	CPUs: 24
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 7900X 12-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 97 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 12
+	Number of logical CPUs: 24
+	Graphics card #0 name: Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M/6850M XT]
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+	Graphics card #0 VRAM (MB): 16640.00
+	Graphics card #0 deviceId: 0x73df
+	Graphics card #0 versionInfo: unknown
+	Graphics card #1 name: Raphael
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. [AMD/ATI] (0x1002)
+	Graphics card #1 VRAM (MB): 258.00
+	Graphics card #1 deviceId: 0x164e
+	Graphics card #1 versionInfo: unknown
+	Virtual memory max (MB): 24625.32
+	Virtual memory used (MB): 13532.75
+	Swap memory total (MB): 9011.20
+	Swap memory used (MB): 1003.72
+	JVM Flags: 0 total; 
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		sponge-mixin-0.13.1+mixin.0.8.5.jar mixin PLUGINSERVICE 
+		loader-2.0.17.jar slf4jfixer PLUGINSERVICE 
+		loader-2.0.17.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-2.0.17.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-synthetic-package TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@2.0
+		lowcodefml@2.0
+		minecraft@2.0
+	Mod List: 
+		neoforge-20.4.237.jar                             |Minecraft                     |minecraft                     |1.20.4              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		terrablender-neoforge-940057-5068223.jar          |TerraBlender                  |terrablender                  |3.3.0.12            |COMMON_SET|Manifest: NOSIGNATURE
+		glitchcore-955399-5048525.jar                     |GlitchCore                    |glitchcore                    |1.0.0.56            |COMMON_SET|Manifest: NOSIGNATURE
+		biomes-o-plenty-220318-5062192.jar                |Biomes O' Plenty              |biomesoplenty                 |19.0.0.46           |COMMON_SET|Manifest: NOSIGNATURE
+		main                                              |Flower Seeds 2 Biomes O Plenty|flowerseedsbop                |2.0.0               |ERROR     |Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |neoforge                      |20.4.237            |COMMON_SET|Manifest: NOSIGNATURE
+		jei-1.20.4-neoforge-17.3.0.43.jar                 |Just Enough Items             |jei                           |17.3.0.43           |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 6a8c7905-f302-4750-996c-93d772bdf85b
+	FML: 20.4
+	NeoForge: net.neoforged:20.4.237

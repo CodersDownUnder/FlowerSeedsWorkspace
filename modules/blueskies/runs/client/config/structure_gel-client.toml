@@ -1,0 +1,32 @@
+
+[structure_block]
+	#
+	# Displays info on top of Structure Blocks and Jigsaws in world.
+	# Default: true
+	show_structure_block_info = true
+
+	[structure_block.show_invisible]
+		#
+		# Default: true
+		air = true
+		#
+		# Default: true
+		structure_void = true
+		#
+		# Default: true
+		barrier = true
+		#
+		# Default: true
+		light = true
+
+[building_tool]
+	#
+	# Makes the render used by the Building Tool operate in a threaded context.
+	# Default: true
+	thread_building_tool = true
+	#
+	# The amount of time (milliseconds) until a clone preview is aborted. This stops your game from being frozen when copying large regions.
+	# Default: 8000
+	#Range: 0 ~ 1000000000
+	max_clone_compile_time = 8000
+

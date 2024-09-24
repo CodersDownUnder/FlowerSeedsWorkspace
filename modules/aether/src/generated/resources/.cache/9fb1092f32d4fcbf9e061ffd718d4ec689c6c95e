@@ -1,0 +1,5 @@
+// 1.20.4	2024-09-03T16:05:03.387973542	Recipes
+a949d42ec09ec3ee6b553eabc0fb2509845a6031 data/minecraft/advancements/recipes/misc/has_purple_flower_seed.json
+bb997e54cb8f1ce002908bd130c031cf6d387707 data/minecraft/advancements/recipes/misc/has_white_flower_seed.json
+419da31b5000a4f6adda9985103c74898ea277bc data/minecraft/recipes/has_purple_flower_seed.json
+e679a17064f117867747e9cf2869e4f25b06377d data/minecraft/recipes/has_white_flower_seed.json

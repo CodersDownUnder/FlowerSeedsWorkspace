@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseedsbop:pink_daffodil_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "biomesoplenty:pink_daffodil"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseedsbop:pink_daffodil_seed"
+      }
+    }
+  ],
+  "growthTicks": 1400,
+  "seed": {
+    "item": "flowerseedsbop:pink_daffodil_seed"
+  }
+}

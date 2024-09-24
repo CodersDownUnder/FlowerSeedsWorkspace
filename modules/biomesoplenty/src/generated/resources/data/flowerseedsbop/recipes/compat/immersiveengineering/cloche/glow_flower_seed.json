@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "flowerseedsbop:glow_flower_seed"
+  },
+  "render": {
+    "type": "crop",
+    "block": "flowerseedsbop:glow_flower_seed"
+  },
+  "results": [
+    {
+      "item": "biomesoplenty:glowflower"
+    },
+    {
+      "item": "flowerseedsbop:glow_flower_seed"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 240
+}

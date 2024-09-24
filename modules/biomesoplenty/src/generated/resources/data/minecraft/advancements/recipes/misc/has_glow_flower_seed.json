@@ -1,0 +1,51 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "neoforge:mod_loaded",
+            "modid": "biomesoplenty"
+          }
+        },
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glowflower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "biomesoplenty:glowflower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:has_glow_flower_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_glowflower"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:has_glow_flower_seed"
+    ]
+  }
+}

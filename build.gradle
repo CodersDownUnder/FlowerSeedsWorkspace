@@ -1,13 +1,32 @@
 plugins {
-    id 'fabric-loom' version '1.3-SNAPSHOT' apply(false)
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)' apply(false)
+    id 'fabric-loom' version '1.7-SNAPSHOT' apply(false)
+    id 'net.neoforged.gradle.userdev' version '7.0.97' apply(false)
     id("org.spongepowered.mixin") version "0.7-SNAPSHOT" apply(false)
+    id 'java-library'
+    id "com.hypherionmc.modutils.modpublisher" version "2.1.6"
 }
+
+
 
 subprojects {
     apply plugin: 'java'
     java.withSourcesJar()
     java.withJavadocJar()
+
+    sourceSets {
+        main {
+            java {
+                srcDir("main")
+            }
+        }
+
+        datagen {
+            java {
+                srcDir("datagen")
+            }
+        }
+    }
+
 
     repositories {
         mavenCentral()
@@ -15,5 +34,112 @@ subprojects {
             name = 'Sponge / Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
+
+        maven {
+            name = 'Minecraftschurli Maven'
+            url = 'https://minecraftschurli.ddns.net/repository/maven-public/'
+            content {
+            includeGroup 'com.github.minecraftschurlimods'
+        }
+    }
+
+//        maven {
+//            url = "http://localhost:8080/"
+//            allowInsecureProtocol = true
+//            content {
+//                includeGroup 'com.github.minecraftschurlimods'
+//            }
+//
+//        }
+
+        maven {
+            url = "https://maven.blamejared.com"
+            content {
+                includeGroup('mezz.jei')
+                includeGroup('org.openzen.zencode')
+                includeGroupByRegex('com\\.blamejared.*')
+            }
+        }
+
+        maven {
+            url = 'https://maven.theillusivec4.top/'
+            content {
+                includeGroup('top.theillusivec4.curios')
+            }
+        }
+
+
+        maven {
+            url = 'https://maven.tterrag.com/'
+            content {
+                includeGroup('team.chisel.ctm')
+            }
+        }
+        maven {
+            url = 'https://squiddev.cc/maven/'
+            content {
+                includeGroup('cc.tweaked')
+            }
+        }
+
+        maven {
+            url = 'https://dogforce-games.com/maven/'
+            content {
+                includeGroup('dev.gigaherz.jsonthings')
+            }
+        }
+
+        maven {
+            url = 'https://maven2.bai.lol'
+            content {
+                includeGroup('lol.bai')
+                includeGroup('mcp.mobius.waila')
+            }//WTHIT
+        }
+        maven {
+            url = 'https://www.cursemaven.com'
+            content {
+                includeGroup('curse.maven')
+            }
+        }
+
+        maven {
+            url = 'https://modmaven.dev/'
+            content {
+                includeGroup('mcjty.theoneprobe')
+            }
+        }
+
+        maven {
+            url = "https://maven.shedaniel.me/"
+            content {
+                includeGroup("me.shedaniel")
+                includeGroup("me.shedaniel.cloth")
+                includeGroup("dev.architectury")
+            }
+        }
+
+        maven {
+            url = "https://maven.moddinglegacy.com/maven"
+            content {
+                includeGroup('com.legacy')
+            }
+        }
+
+        maven { // TOP
+            url "https://maven.k-4u.nl"
+        }
+    }
+
+    dependencies {
+        implementation "com.github.minecraftschurlimods:easydatagenlib:${easydatagenlib_version}"
+
+
+        compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+        compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+        // at runtime, use the full JEI jar for NeoForge
+        runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+
+        implementation "mcjty.theoneprobe:theoneprobe:${top_version}"
     }
 }
