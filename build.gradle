@@ -1,6 +1,6 @@
 plugins {
     id 'fabric-loom' version '1.7-SNAPSHOT' apply(false)
-    id 'net.neoforged.gradle.userdev' version '7.0.97' apply(false)
+    id 'net.neoforged.gradle.userdev' version '7.0.173'
     id("org.spongepowered.mixin") version "0.7-SNAPSHOT" apply(false)
     id 'java-library'
     id "com.hypherionmc.modutils.modpublisher" version "2.1.6"
@@ -34,10 +34,10 @@ subprojects {
             name = 'Sponge / Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
-
+//
         maven {
             name = 'Minecraftschurli Maven'
-            url = 'https://minecraftschurli.ddns.net/repository/maven-public/'
+            url = 'https://maven.minecraftschurli.at/maven-public'
             content {
             includeGroup 'com.github.minecraftschurlimods'
         }
@@ -111,15 +111,6 @@ subprojects {
         }
 
         maven {
-            url = "https://maven.shedaniel.me/"
-            content {
-                includeGroup("me.shedaniel")
-                includeGroup("me.shedaniel.cloth")
-                includeGroup("dev.architectury")
-            }
-        }
-
-        maven {
             url = "https://maven.moddinglegacy.com/maven"
             content {
                 includeGroup('com.legacy')
@@ -137,9 +128,10 @@ subprojects {
 
         compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
         compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
-        // at runtime, use the full JEI jar for NeoForge
-        runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+//        // at runtime, use the full JEI jar for NeoForge
+//        runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 
-        implementation "mcjty.theoneprobe:theoneprobe:${top_version}"
+
+        //implementation "mcjty.theoneprobe:theoneprobe:${top_version}"
     }
 }
