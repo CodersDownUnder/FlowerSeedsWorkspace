@@ -21,7 +21,7 @@ pluginManagement {
 }
 
 plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
 
 }
 
@@ -29,28 +29,11 @@ rootProject.name = 'Multiproject Template'
 
 // === NEOFORGE ===
 // ----------
-//include //"modules:flowerseeds",
+include "modules:FlowerSeedsNew",
+        "modules:FlowerSeedsBiomesOPlenty"
         //"modules:biomesoplenty",
         //"modules:blueskies",
         //"modules:cyclic",
         //"modules:aether"
 
 
-// ----------
-
-
-// You can add as many modules as you want, for this copy the content of "example_module" to each new module!
-//include "modules:example_module"
-
-// Example how to use multiple modules within a module:
-
-// include "modules:MODULE_NAME",
-//      "modules:MODULE_NAME:SUB_MODULE_NAME",
-//      "modules:MODULE_NAME:SUB_MODULE_NAME"
-
-// You can even add a Multi-Loader project ! (using Architectury may require some extra steps)
-
-//include "modules:multiproject_module",
-//        "modules:multiproject_module:common",
-//        "modules:multiproject_module:fabric",
-//        "modules:multiproject_module:forge"
