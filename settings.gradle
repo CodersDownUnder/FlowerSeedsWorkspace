@@ -29,8 +29,8 @@ rootProject.name = 'Multiproject Template'
 
 // === NEOFORGE ===
 // ----------
-include "modules:FlowerSeedsNew",
-        "modules:FlowerSeedsBiomesOPlenty"
+include "modules:FlowerSeedsMain"
+        //"modules:FlowerSeedsBiomesOPlenty"
         //"modules:biomesoplenty",
         //"modules:blueskies",
         //"modules:cyclic",
